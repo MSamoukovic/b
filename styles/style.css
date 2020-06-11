@@ -1,0 +1,80 @@
+body{
+    color:#606060;
+    
+ }
+ 
+ p{
+     font-size: 18px;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-weight:lighter; 
+ }
+ 
+ h2, h4,h3 { 
+     font-family: 'Lato', sans-serif;
+ }
+ 
+ #tableText{
+     font-size: 16px;
+ }
+
+ .table{
+     color:#606060;
+ }
+ 
+ #iconDiv{
+     width:65px;
+     height: 92px;
+     text-align: center;
+ }
+ 
+ #menuIcon, #natureIcon{
+     width: 65px;
+     height: 92px;
+ }
+ 
+ 
+ .sidebar{
+     width:465px;
+     z-index: 1;
+ }
+ 
+ 
+ .nav_name{
+     width:400px;
+     height: 92px;
+     background-color: cadetblue;
+ }
+ 
+ .searchInput{
+     width:465px;
+     height: 92px;
+ }
+ 
+ .headerIcons{
+     width:465px;
+     height: 92px;
+ }
+ 
+ #navbarDiv{
+     width:65px;
+ }
+ #placeholderIcon{
+     font-family: FontAwesome;
+     font-size: 22px;
+ }
+ 
+ tr{
+     height: 90px;
+ }
+ 
+@media screen and (device-aspect-ratio: 375/667)
+ {
+	 h3{
+	 font-size:18px
+	 }
+	 
+	 p{
+		 font-size:16px;
+	 }
+ }
+ 
