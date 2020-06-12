@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/sidebar.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="d-flex flex-row">
+        <div class="position-relative bg-light" id="navDiv">
+            <div class="d-flex flex-column sidebar position-absolute h-100 ">
+                <div class="d-flex flex-row ">
+                    <div id="menuIcon">
+                        <button class=" bg-secondary border border-secondary h-100 w-100 " type="button"
+                            id="toggle-button">
+                            <i class="fas fa-bars fa-2x text-white "></i>
+                        </button>
+                    </div>
+                    <div class="nav_name d-none bg-secondary" id="natureIconDiv">
+                        <div id="natureIcon" class="pl-5 d-flex">
+                            <i class="fas fa-image fa-2x text-white my-auto"></i>
+                        </div>
+                    </div>
+                    <div class="headerNutureIcon">
+                        <div id="natureIcon" class="ml-5 mr-5  d-none d-lg-flex w-100">
+                            <i class="fas fa-image fa-2x  my-auto"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="links d-none d-lg-block">
+                    <div class="d-flex flex-row ">
+                        <div id="iconDiv" class="searchIcon">
+                            <button class=" bg-light border border-light h-100 w-100 " type="button" id="toggle-button">
+                                <i class="fas fa-search fa-2x text-secondary "></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d-none pt-2 pt-lg-0" id="searchInput">
+                        <div class="searchInput bg-light d-flex">
+                            <div class="form-group align-self-center  w-100 pr-3 pl-3  my-auto">
+                                <input class="form-control form-control-lg" type="text"
+                                    placeholder="&#xF002;&nbsp; Search..." aria-label="Search" id="placeholderIcon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row ">
+                        <div id="iconDiv">
+                            <button class=" bg-light border border-light h-100 w-100 " type="button" id="toggle-button">
+                                <i class="fas fa-home fa-2x text-secondary "></i>
+                            </button>
+                        </div>
+                        <div class="nav_name d-none bg-light">
+                            <div class="d-flex h-100">
+                                <div class="my-auto">
+                                    <a href="index.html" class="my-auto text-secondary ">
+                                        <h4 class="pl-4 m-0 text-uppercase">Dashboard</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row ">
+                        <div id="iconDiv">
+                            <button class=" bg-light border border-light h-100 w-100" type="button" id="toggle-button">
+                                <i class="fas fa-file fa-2x text-secondary "></i>
+                            </button>
+                        </div>
+                        <div class="nav_name d-none bg-light">
+                            <div class="d-flex h-100">
+                                <div class="my-auto">
+                                    <a href="visitors.html" class="my-auto text-secondary ">
+                                        <h4 class="pl-4 m-0 text-uppercase">Resport</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row ">
+                        <div id="iconDiv">
+                            <button class=" bg-light border border-light h-100 w-100" type="button" id="toggle-button">
+                                <i class="fas fa-chart-bar fa-2x text-secondary "></i>
+                            </button>
+                        </div>
+                        <div class="nav_name d-none bg-light">
+                            <div class="d-flex h-100">
+                                <div class="my-auto">
+                                    <a href="#" class="my-auto text-secondary ">
+                                        <h4 class="pl-4 m-0 text-uppercase">Analytics</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row ">
+                        <div id="iconDiv">
+                            <button class=" bg-light border border-light h-100 w-100" type="button" id="toggle-button">
+                                <i class="fas fa-inbox fa-2x text-secondary "></i>
+                            </button>
+                        </div>
+                        <div class="nav_name d-none bg-light">
+                            <div class="d-flex h-100">
+                                <div class="my-auto">
+                                    <a href="#" class="my-auto text-secondary ">
+                                        <h4 class="pl-4 m-0 text-uppercase">Inbox</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row ">
+                        <div id="iconDiv">
+                            <button class=" bg-light border border-light h-100 w-100" type="button" id="toggle-button">
+                                <i class="fas fa-file-image fa-2x text-secondary "></i>
+                            </button>
+                        </div>
+                        <div class="nav_name d-none bg-light">
+                            <div class="d-flex h-100">
+                                <div class="my-auto">
+                                    <a href="#" class="my-auto text-secondary ">
+                                        <h4 class="pl-4 m-0  text-uppercase">Media</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row ">
+                        <div id="iconDiv">
+                            <button class=" bg-light border border-light h-100 w-100" type="button" id="toggle-button">
+                                <i class="fas fa-calendar-minus fa-2x text-secondary "></i>
+                            </button>
+                        </div>
+                        <div class="nav_name d-none bg-light">
+                            <div class="d-flex h-100">
+                                <div class="my-auto">
+                                    <a href="#" class="my-auto text-secondary ">
+                                        <h4 class="pl-4 m-0  text-uppercase">Calendar</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row ">
+                        <div id="iconDiv">
+                            <button class=" bg-light border border-light h-100 w-100" type="button" id="toggle-button">
+                                <i class="fas fa-users fa-2x text-secondary "></i>
+                            </button>
+                        </div>
+                        <div class="nav_name d-none bg-light">
+                            <div class="d-flex h-100">
+                                <div class="my-auto">
+                                    <a href="newUser.html" class="my-auto text-secondary ">
+                                        <h4 class="pl-4 m-0 text-uppercase">Users</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row ">
+                        <div id="iconDiv">
+                            <button class=" bg-light border border-light h-100 w-100" type="button" id="toggle-button">
+                                <i class="fas fa-cog fa-2x text-secondary "></i>
+                            </button>
+                        </div>
+                        <div class="nav_name d-none bg-light">
+                            <div class="d-flex h-100">
+                                <div class="my-auto">
+                                    <a href="#" class="my-auto text-secondary ">
+                                        <h4 class="pl-4 m-0  text-uppercase">Settings</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-grow-1 ">
+            <header class=" border d-flex">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-12 col-lg-4 offset-lg-8 ">
+                            <div class=" mr-2 ml-2 pt-3 pb-3 d-flex flex-row-reverse align-items-center">
+                                <div class=" mr-0 pl-2">
+                                    <span class="glyphicon glyphicon-envelope">
+                                        <i
+                                            class="fas fa-user fa-1x text-secondary border border-secondary p-3 rounded-circle"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <h3 class="mb-0 text-right text-uppercase">Renee Mckelvey</h3>
+                                    <p class="p-0 m-0 font-weight-light float-right">Account Settings</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container   mt-lg-5 mb-lg-5 pt-lg-2 pb-lg-5">
+                <div class="row  mt-lg-5 mr-2 ml-2 mt-2">
+                    <div class="row pb-5">
+                        <div class="col-12 col-lg-8">
+                            <div class="row ">
+                                <div class="col-12">
+                                    <div class="border-bottom mt-3 mb-3">
+                                        <h3 class="mb-0">New User Details</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-12 pr-lg-4">
+                                    <div class="form-group pb-2">
+                                        <input type="text" class="form-control  form-control-lg rounded-0 border "
+                                            id="inputEmail4" placeholder="Username">
+                                    </div>
+                                    <div class="form-group  pb-2">
+                                        <input type="text" class="form-control  form-control-lg rounded-0 border "
+                                            id="inputPassword4" placeholder="First Name">
+                                    </div>
+                                    <div class="form-group  pb-2">
+                                        <select id="inputRole" class="form-control  form-control-lg rounded-0 border ">
+                                            <option selected>Role</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="custom-control custom-checkbox checkbox-xl pb-4">
+                                        <input type="checkbox" class="custom-control-input" id="checkbox-3" checked="">
+                                        <label class="custom-control-label" for="checkbox-3">Send email
+                                            confirmation</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 pl-lg-4 pr-lg-4">
+                                    <div class="form-group pb-2 ">
+                                        <input type="email" class="form-control  form-control-lg rounded-0 border "
+                                            id="inputPassword4" placeholder="Email">
+                                    </div>
+                                    <div class="form-group  ">
+                                        <input type="text" class="form-control  form-control-lg rounded-0 border "
+                                            id="inputPassword4" placeholder="Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 pl-lg-4">
+                            <div class="row ">
+                                <div class="col-12">
+                                    <div class="border-bottom mt-3 mb-3">
+                                        <h3 class="mb-0">Profile Picture</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <img src="images/image3.png" class="img-fluid w-100 border " alt="Image">
+                                    <div class="form-group col-md-12 p-0 mt-4">
+                                        <button type="button" class="btn btn-light w-100 rounded-0 p-2">Select
+                                            Image</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-lg-5 mt-2 mb-lg-5 mb-2">
+                    <div class="col-12 col-lg-8">
+                        <div class="form-row">
+                            <div class="form-group col-12 col-lg-4  ">
+                                <button type="submit" class="btn btn-secondary w-100 rounded-0 p-2">Add User</button>
+                            </div>
+                            <div class="form-group col-12 col-lg-4 ml-1">
+                                <button type="button" class="btn btn-light w-100 rounded-0 p-2">Cancle</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer border p-4  mb-0 pb-0 w-100">
+        <div class="container-fluid">
+            <div class="d-flex flex-row">
+                <div class="pl-lg-5 pl-0 my-auto">
+                    <span class="glyphicon glyphicon-envelope">
+                        <i class="fas fa-copyright fa-1x text-secondary"></i>
+                    </span>
+                </div>
+                <div class="align-self-center pl-2">
+                    Your Company Details
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

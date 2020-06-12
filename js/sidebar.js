@@ -7,5 +7,7 @@ $(document).ready(function () {
         $("#searchInput").toggleClass("d-flex");
         $(".sidebar").toggleClass("bg-light border border-secondary");
         $(".headerNutureIcon").toggleClass("d-none");
+        $(".links").toggleClass("d-block");     
     })
 });
+
