@@ -19,22 +19,22 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <script src="js/sidebar.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
     <div class="d-flex flex-row">
         <div class="position-relative bg-light" id="navDiv">
-            <div class="d-flex flex-column sidebar position-absolute h-100 ">
+            <div class="d-flex flex-column sidebar position-absolute">
                 <div class="d-flex flex-row ">
-                    <div id="menuIcon">
-                        <button class=" bg-secondary border border-secondary h-100 w-100 " type="button"
+                    <div id="menuIcon" class="rounded-0">
+                        <button class=" bg-secondary h-100 w-100 rounded-0 border-0" type="button" style="outline:none;"
                             id="toggle-button">
                             <i class="fas fa-bars fa-2x text-white "></i>
                         </button>
@@ -58,17 +58,18 @@
                             </button>
                         </div>
                     </div>
-
                     <div class="d-none pt-2 pt-lg-0" id="searchInput">
-                        <div class="searchInput bg-light d-flex">
-                            <div class="form-group align-self-center  w-100 pr-3 pl-3  my-auto">
-                                <input class="form-control form-control-lg" type="text"
-                                    placeholder="&#xF002;&nbsp; Search..." aria-label="Search" id="placeholderIcon">
+                        <div class="searchInput bg-light d-flex flex-column">
+                            <div class="input-group align-self-center  w-100 pr-3 pl-1  my-auto">
+                                <div class="input-group-prepend ml-3">
+                                    <span class="input-group-text bg-white border-right-0 rounded-0"><i
+                                            class="fas fa-search fa-1x my-auto text-secondary"></i></span>
+                                </div>
+                                <input type="text" class="form-control border-left-0 mr-1 rounded-0"
+                                    placeholder="Search ..." id="search">
                             </div>
                         </div>
                     </div>
-
-
                     <div class="d-flex flex-row ">
                         <div id="iconDiv">
                             <button class=" bg-light border border-light h-100 w-100 " type="button" id="toggle-button">
@@ -79,7 +80,7 @@
                             <div class="d-flex h-100">
                                 <div class="my-auto">
                                     <a href="index.html" class="my-auto text-secondary ">
-                                        <h4 class="pl-4 m-0 text-uppercase">Dashboard</h4>
+                                        <p class="pl-4 m-0 text-uppercase p21">Dashboard</p>
                                     </a>
                                 </div>
                             </div>
@@ -94,8 +95,8 @@
                         <div class="nav_name d-none bg-light">
                             <div class="d-flex h-100">
                                 <div class="my-auto">
-                                    <a href="visitors.html" class="my-auto text-secondary ">
-                                        <h4 class="pl-4 m-0 text-uppercase">Resport</h4>
+                                    <a href="#" class="my-auto text-secondary ">
+                                        <p class="pl-4 m-0 text-uppercase p21">Reports</p>
                                     </a>
                                 </div>
                             </div>
@@ -103,15 +104,16 @@
                     </div>
                     <div class="d-flex flex-row ">
                         <div id="iconDiv">
-                            <button class=" bg-light border border-light h-100 w-100" type="button" id="toggle-button">
+                            <button class=" bg-light border border-light h-100 w-100" type="button" id="toggle-button"
+                                onclick="location.href='visitors.html'">
                                 <i class="fas fa-chart-bar fa-2x text-secondary "></i>
                             </button>
                         </div>
                         <div class="nav_name d-none bg-light">
                             <div class="d-flex h-100">
                                 <div class="my-auto">
-                                    <a href="#" class="my-auto text-secondary ">
-                                        <h4 class="pl-4 m-0 text-uppercase">Analytics</h4>
+                                    <a href="visitors.html" class="my-auto text-secondary ">
+                                        <p class="pl-4 m-0 text-uppercase p21">Analytics</p>
                                     </a>
                                 </div>
                             </div>
@@ -127,7 +129,7 @@
                             <div class="d-flex h-100">
                                 <div class="my-auto">
                                     <a href="#" class="my-auto text-secondary ">
-                                        <h4 class="pl-4 m-0 text-uppercase">Inbox</h4>
+                                        <p class="pl-4 m-0 text-uppercase p21">Inbox</p>
                                     </a>
                                 </div>
                             </div>
@@ -143,7 +145,7 @@
                             <div class="d-flex h-100">
                                 <div class="my-auto">
                                     <a href="#" class="my-auto text-secondary ">
-                                        <h4 class="pl-4 m-0  text-uppercase">Media</h4>
+                                        <p class="pl-4 m-0  text-uppercase p21">Media</p>
                                     </a>
                                 </div>
                             </div>
@@ -159,7 +161,7 @@
                             <div class="d-flex h-100">
                                 <div class="my-auto">
                                     <a href="#" class="my-auto text-secondary ">
-                                        <h4 class="pl-4 m-0  text-uppercase">Calendar</h4>
+                                        <p class="pl-4 m-0  text-uppercase p21">Calendar</p>
                                     </a>
                                 </div>
                             </div>
@@ -167,7 +169,8 @@
                     </div>
                     <div class="d-flex flex-row ">
                         <div id="iconDiv">
-                            <button class=" bg-light border border-light h-100 w-100" type="button" id="toggle-button">
+                            <button class=" bg-light border border-light h-100 w-100" type="button" id="toggle-button"
+                                onclick="location.href='newUser.html'">
                                 <i class="fas fa-users fa-2x text-secondary "></i>
                             </button>
                         </div>
@@ -175,7 +178,7 @@
                             <div class="d-flex h-100">
                                 <div class="my-auto">
                                     <a href="newUser.html" class="my-auto text-secondary ">
-                                        <h4 class="pl-4 m-0 text-uppercase">Users</h4>
+                                        <p class="pl-4 m-0 text-uppercase p21">Users</p>
                                     </a>
                                 </div>
                             </div>
@@ -191,14 +194,13 @@
                             <div class="d-flex h-100">
                                 <div class="my-auto">
                                     <a href="#" class="my-auto text-secondary ">
-                                        <h4 class="pl-4 m-0  text-uppercase">Settings</h4>
+                                        <p class="pl-4 m-0  text-uppercase p21">Settings</p>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <div class="flex-grow-1 ">
@@ -214,10 +216,9 @@
                                     </span>
                                 </div>
                                 <div>
-                                    <h3 class="mb-0 text-right text-uppercase">Renee Mckelvey</h3>
-                                    <p class="p-0 m-0 font-weight-light float-right">Account Settings</p>
+                                    <p class="mb-0 text-right text-uppercase  p21">Renee Mckelvey</p>
+                                    <p class="p-0 m-0 font-weight-light float-right opacity-80">Account Settings</p>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -225,11 +226,11 @@
             </header>
             <div class="container ">
                 <div class="row mt-lg-5">
-                    <div class="col-12 col-lg-4 mt-2 ">
+                    <div class="col-12 col-lg-4">
                         <div class=" mr-2 ml-2 border  d-flex align-items-center">
                             <div class="p-4 ">
-                                <h3 class="mb-0 text-uppercase">Total Sales</h3>
-                                <p class="p-0 m-0 font-weight-light">21 324</p>
+                                <p class="mb-0 text-uppercase  p21">Total Sales</p>
+                                <p class="p-0 m-0 font-weight-light opacity-80">21 324</p>
                             </div>
                             <div class=" ml-auto p-4">
                                 <span class="glyphicon glyphicon-envelope">
@@ -238,11 +239,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 mt-2">
+                    <div class="col-12 col-lg-4">
                         <div class=" mr-2 ml-2 border d-flex align-items-center">
                             <div class="pl-4 mt-4 mb-4 ">
-                                <h3 class="mb-0 text-uppercase">Total Income</h3>
-                                <p class="p-0 m-0 font-weight-light">$ 211 324</p>
+                                <p class="mb-0 text-uppercase  p21">Total Income</p>
+                                <p class="p-0 m-0 font-weight-light opacity-80">$ 211 324</p>
                             </div>
                             <div class=" ml-auto p-4">
                                 <span class="glyphicon glyphicon-envelope">
@@ -251,11 +252,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 mt-2">
+                    <div class="col-12 col-lg-4">
                         <div class=" mr-2 ml-2 border   d-flex align-items-center">
                             <div class="p-4 ">
-                                <h3 class="mb-0 text-uppercase">Total Views</h3>
-                                <p class="p-0 m-0 font-weight-light">65 2234</p>
+                                <p class="mb-0 text-uppercase p21">Total Views</p>
+                                <p class="p-0 m-0 font-weight-light opacity-80">65 2234</p>
                             </div>
                             <div class=" ml-auto p-4">
                                 <span class="glyphicon glyphicon-envelope">
@@ -270,11 +271,11 @@
                         <div class=" mr-2 ml-2 border  d-flex flex-column ">
                             <div class="d-flex align-items-center ">
                                 <div class="pl-4 mt-4 mb-4 ">
-                                    <h3 class="mb-0 text-uppercase">Sales Performance</h3>
+                                    <p class="mb-0 text-uppercase p21">Sales Performance</p>
                                 </div>
                                 <div class="p-4 ml-auto">
-                                    <div class="bg-light float-right p-2">
-                                        <button class="btn bg-light text-secondary"><i
+                                    <div class=" float-right p-2">
+                                        <button class="btn  text-secondary" id="settingsButton"><i
                                                 class="fas fa-cog fa-1x"></i></button>
                                     </div>
                                 </div>
@@ -287,9 +288,9 @@
                     </div>
                     <div class="col-12 col-lg-4 mt-2">
                         <div class=" mr-2 ml-2 border  h-100 bg-white">
-                            <div class="d-flex align-items-center ">
+                            <div class="d-flex align-items-center">
                                 <div class="p-4 ">
-                                    <h3 class="mb-0 text-uppercase">Top Categories</h3>
+                                    <p class="mb-0 text-uppercase  p21">Top Categories</p>
                                 </div>
                             </div>
                             <div class="border w-25"> </div>
@@ -303,7 +304,7 @@
                     <div class="col-12  mt-2">
                         <div class=" mr-2 ml-2 d-flex align-items-center">
                             <div class="">
-                                <h3 class="mb-0 ml-0 text-uppercase">Recent Customers</h3>
+                                <p class="mb-0 ml-0 text-uppercase p21">Recent Customers</p>
                             </div>
                             <div class="ml-auto">
                                 <div class="bg-light float-right p-2">
@@ -322,25 +323,25 @@
                                     <tr>
                                         <td class="align-middle">
                                             <div>
-                                                <h4 class="m-0 p-0">Jerry Mattedi</h4>
+                                                <p class="m-0 p-0 p21">Jerry Mattedi</p>
                                             </div>
                                         </td>
                                         <td class="align-middle">
                                             <div>
                                                 <p class="p-0 m-0" id="tableText">13 aug 2019</p>
-                                                <p class="m-0 p-0">Joined</p>
+                                                <p class="m-0 p-0" id="p16">Joined</p>
                                             </div>
                                         </td>
                                         <td class="align-middle">
                                             <div>
                                                 <p class="mb-0 mt-0">251-661-5362</p>
-                                                <p class="p-0 m-0">Phone Number</p>
+                                                <p class="p-0 m-0" id="p16">Phone Number</p>
                                             </div>
                                         </td>
                                         <td class="align-middle">
                                             <div>
                                                 <p class="mb-0 mt-0">New York</p>
-                                                <p class="m-0 p-0">Location</p>
+                                                <p class="m-0 p-0" id="p16">Location</p>
                                             </div>
                                         </td>
                                         <td class="align-middle">
@@ -355,24 +356,24 @@
                                     </tr>
                                     <tr class="bg-light">
                                         <td class="align-middle">
-                                            <h4>Elianora Vasilo</h4>
+                                            <p class="p21">Elianora Vasilo</p>
                                         </td>
                                         <td class="align-middle">
                                             <div>
                                                 <p class="mb-0 mt-0">13 aug 2019</p>
-                                                <p class="m-0 p-0">Joined</p>
+                                                <p class="m-0 p-0" id="p16">Joined</p>
                                             </div>
                                         </td>
                                         <td class="align-middle">
                                             <div>
                                                 <p class="mb-0 mt-0">351-661-3252</p>
-                                                <p class="m-0 p-0">Phone Number</p>
+                                                <p class="m-0 p-0" id="p16">Phone Number</p>
                                             </div>
                                         </td>
                                         <td class="align-middle">
                                             <div>
                                                 <p class="mb-0 mt-0">Ontario</p>
-                                                <p class="m-0 p-0">Location</p>
+                                                <p class="m-0 p-0" id="p16">Location</p>
                                             </div>
                                         </td>
                                         <td class="align-middle">
@@ -387,24 +388,24 @@
                                     </tr>
                                     <tr>
                                         <td class="align-middle">
-                                            <h4 class="mb-0">Marcos Anguiano</h4>
+                                            <p class="mb-0 p21">Marcos Anguiano</p>
                                         </td>
                                         <td class="align-middle">
                                             <div>
                                                 <p class="mb-0 mt-0">13 aug 2019</p>
-                                                <p class="m-0 p-0">Joined</p>
+                                                <p class="m-0 p-0" id="p16">Joined</p>
                                             </div>
                                         </td>
                                         <td class="align-middle">
                                             <div>
                                                 <p class="mb-0 mt-0">351-661-3252</p>
-                                                <p class="m-0 p-0">Phone Number</p>
+                                                <p class="m-0 p-0" id="p16">Phone Number</p>
                                             </div>
                                         </td>
                                         <td class="align-middle">
                                             <div>
                                                 <p class="mb-0 mt-0">Milan</p>
-                                                <p class="p-0 m-0">Location</p>
+                                                <p class="p-0 m-0" id="p16">Location</p>
                                             </div>
 
                                         </td>
@@ -420,26 +421,26 @@
                                     </tr>
                                     <tr class="bg-light">
                                         <td class="align-middle">
-                                            <h4 class="mb-0">Alvis Dean</h4>
+                                            <p class="mb-0 p21">Alvis Dean</p>
                                         </td>
                                         <td class="align-middle">
                                             <div>
                                                 <p class="mb-0 mt-0">13 aug 2019</p>
-                                                <p class="m-0 p-0">Joined</p>
+                                                <p class="m-0 p-0" id="p16">Joined</p>
                                             </div>
 
                                         </td>
                                         <td class="align-middle">
                                             <div>
                                                 <p class="mb-0 mt-0">351-661-3252</p>
-                                                <p class="m-0 p-0">Phone Number</p>
+                                                <p class="m-0 p-0" id="p16">Phone Number</p>
                                             </div>
 
                                         </td>
                                         <td class="align-middle">
                                             <div>
                                                 <p class="mb-0 mt-0">Las Vegas</p>
-                                                <p class="m-0 p-0">Location</p>
+                                                <p class="m-0 p-0" id="p16">Location</p>
                                             </div>
 
                                         </td>
@@ -455,31 +456,32 @@
                                     </tr>
                                     <tr>
                                         <td class="align-middle">
-                                            <h4 class="mb-0">Lissa Shipsey</h4>
+                                            <p class="mb-0 p21">Lissa Shipsey</p>
                                         </td>
                                         <td class="align-middle">
                                             <div>
                                                 <p class="mb-0 mt-0">13 aug 2018</p>
-                                                <p class="m-0 p-0">Joined</p>
+                                                <p class="m-0 p-0" id="p16">Joined</p>
                                             </div>
                                         </td>
                                         <td class="align-middle">
                                             <div>
                                                 <p class="mb-0 mt-0">351-661-3252</p>
-                                                <p class="m-0 p-0">Phone Number</p>
+                                                <p class="m-0 p-0" id="p16">Phone Number</p>
                                             </div>
 
                                         </td>
                                         <td class="align-middle">
                                             <div>
                                                 <p class="mb-0 mt-0">San Francisco</p>
-                                                <p class="m-0 p-0">Location</p>
+                                                <p class="m-0 p-0" id="p16">Location</p>
                                             </div>
                                         </td>
                                         <td class="align-middle">
                                             <button type="button"
                                                 class="btn btn-secondary w-100 rounded text-secondary border-light"
-                                                id="optionsButton">Options</button>
+                                                id="optionsButton">Options
+                                            </button>
                                         </td>
                                         <td class="align-middle">
                                             <button type="button"

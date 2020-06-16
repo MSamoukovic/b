@@ -1,0 +1,57 @@
+  .events li { 
+    display     : flex; 
+  }
+  
+  .events circle { 
+    position : relative;
+    color    : #ccc;
+    padding  : 0 .5em;  
+  }
+
+  .events #viewAll::after{
+    background    :white; 
+
+  }
+  
+  .events circle::after { 
+     content: "";
+     position      : absolute;
+     z-index       : 2;
+     right         : 0;
+     top           : 0;
+     transform     : translateX(50%);
+     border-radius : 50%;
+     background    : #999999; 
+     border        : 1px #ccc solid;
+     width         : .8em;
+     height        : .8em;
+  }
+  
+  .events span {
+    padding  : 0 .5em 1.5em 1.5em;
+    position : relative;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;     
+    font-weight:lighter; 
+  }
+  
+  .events span::before {
+     content     : "";
+     position    : absolute;
+     z-index     : 1;
+     left        : 0;
+     height      : 100%;
+     border-left : 1px #ccc solid;
+  }
+  
+  .events strong {
+     display: block;
+  }
+
+
+  @media (max-width: 991px) 
+  {
+    .events{
+      margin-left: 0px!important;
+    }
+  }

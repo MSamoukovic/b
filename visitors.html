@@ -13,29 +13,29 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="js/sidebar.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/verticalProgressSteps.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <script src="js/sidebar.js"></script>
 </head>
 
 <body>
     <div class="d-flex flex-row">
         <div class="position-relative bg-light" id="navDiv">
-            <div class="d-flex flex-column sidebar position-absolute h-100 ">
+            <div class="d-flex flex-column sidebar position-absolute">
                 <div class="d-flex flex-row ">
                     <div id="menuIcon">
-                        <button class=" bg-secondary border border-secondary h-100 w-100 " type="button"
-                            id="toggle-button">
+                        <button class=" bg-secondary border border-secondary rounded-0 h-100 w-100  " type="button"
+                            id="toggle-button" style="outline:none;">
                             <i class="fas fa-bars fa-2x text-white "></i>
                         </button>
                     </div>
@@ -58,20 +58,22 @@
                             </button>
                         </div>
                     </div>
-
                     <div class="d-none pt-2 pt-lg-0" id="searchInput">
-                        <div class="searchInput bg-light d-flex">
-                            <div class="form-group align-self-center  w-100 pr-3 pl-3  my-auto">
-                                <input class="form-control form-control-lg" type="text"
-                                    placeholder="&#xF002;&nbsp; Search..." aria-label="Search" id="placeholderIcon">
+                        <div class="searchInput bg-light d-flex flex-column">
+                            <div class="input-group align-self-center  w-100 pr-3 pl-1  my-auto">
+                                <div class="input-group-prepend ml-3">
+                                    <span class="input-group-text bg-white border-right-0 rounded-0"><i
+                                            class="fas fa-search fa-1x my-auto text-secondary"></i></span>
+                                </div>
+                                <input type="text" class="form-control border-left-0 mr-1 rounded-0"
+                                    placeholder="Search ..." id="search">
                             </div>
                         </div>
                     </div>
-
-
                     <div class="d-flex flex-row ">
                         <div id="iconDiv">
-                            <button class=" bg-light border border-light h-100 w-100 " type="button" id="toggle-button">
+                            <button class=" bg-light border border-light h-100 w-100 " type="button" id="toggle-button"
+                                onclick="location.href='index.html'">
                                 <i class="fas fa-home fa-2x text-secondary "></i>
                             </button>
                         </div>
@@ -79,7 +81,7 @@
                             <div class="d-flex h-100">
                                 <div class="my-auto">
                                     <a href="index.html" class="my-auto text-secondary ">
-                                        <h4 class="pl-4 m-0 text-uppercase">Dashboard</h4>
+                                        <p class="pl-4 m-0 text-uppercase p21">Dashboard</p>
                                     </a>
                                 </div>
                             </div>
@@ -94,8 +96,8 @@
                         <div class="nav_name d-none bg-light">
                             <div class="d-flex h-100">
                                 <div class="my-auto">
-                                    <a href="visitors.html" class="my-auto text-secondary ">
-                                        <h4 class="pl-4 m-0 text-uppercase">Resport</h4>
+                                    <a href="#" class="my-auto text-secondary ">
+                                        <p class="pl-4 m-0 text-uppercase p21">Reports</p>
                                     </a>
                                 </div>
                             </div>
@@ -103,15 +105,16 @@
                     </div>
                     <div class="d-flex flex-row ">
                         <div id="iconDiv">
-                            <button class=" bg-light border border-light h-100 w-100" type="button" id="toggle-button">
+                            <button class=" bg-light border border-light h-100 w-100" type="button" id="toggle-button"
+                                onclick="location.href='visitors.html'">
                                 <i class="fas fa-chart-bar fa-2x text-secondary "></i>
                             </button>
                         </div>
                         <div class="nav_name d-none bg-light">
                             <div class="d-flex h-100">
                                 <div class="my-auto">
-                                    <a href="#" class="my-auto text-secondary ">
-                                        <h4 class="pl-4 m-0 text-uppercase">Analytics</h4>
+                                    <a href="visitors.html" class="my-auto text-secondary ">
+                                        <p class="pl-4 m-0 text-uppercase p21">Analytics</p>
                                     </a>
                                 </div>
                             </div>
@@ -127,7 +130,7 @@
                             <div class="d-flex h-100">
                                 <div class="my-auto">
                                     <a href="#" class="my-auto text-secondary ">
-                                        <h4 class="pl-4 m-0 text-uppercase">Inbox</h4>
+                                        <p class="pl-4 m-0 text-uppercase p21">Inbox</p>
                                     </a>
                                 </div>
                             </div>
@@ -143,7 +146,7 @@
                             <div class="d-flex h-100">
                                 <div class="my-auto">
                                     <a href="#" class="my-auto text-secondary ">
-                                        <h4 class="pl-4 m-0  text-uppercase">Media</h4>
+                                        <p class="pl-4 m-0  text-uppercase p21">Media</p>
                                     </a>
                                 </div>
                             </div>
@@ -159,7 +162,7 @@
                             <div class="d-flex h-100">
                                 <div class="my-auto">
                                     <a href="#" class="my-auto text-secondary ">
-                                        <h4 class="pl-4 m-0  text-uppercase">Calendar</h4>
+                                        <p class="pl-4 m-0  text-uppercase p21">Calendar</p>
                                     </a>
                                 </div>
                             </div>
@@ -167,7 +170,8 @@
                     </div>
                     <div class="d-flex flex-row ">
                         <div id="iconDiv">
-                            <button class=" bg-light border border-light h-100 w-100" type="button" id="toggle-button">
+                            <button class=" bg-light border border-light h-100 w-100" type="button" id="toggle-button"
+                                onclick="location.href='newUser.html'">
                                 <i class="fas fa-users fa-2x text-secondary "></i>
                             </button>
                         </div>
@@ -175,7 +179,7 @@
                             <div class="d-flex h-100">
                                 <div class="my-auto">
                                     <a href="newUser.html" class="my-auto text-secondary ">
-                                        <h4 class="pl-4 m-0 text-uppercase">Users</h4>
+                                        <p class="pl-4 m-0 text-uppercase p21">Users</p>
                                     </a>
                                 </div>
                             </div>
@@ -191,14 +195,13 @@
                             <div class="d-flex h-100">
                                 <div class="my-auto">
                                     <a href="#" class="my-auto text-secondary ">
-                                        <h4 class="pl-4 m-0  text-uppercase">Settings</h4>
+                                        <p class="pl-4 m-0  text-uppercase p21">Settings</p>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <div class="flex-grow-1 ">
@@ -214,10 +217,9 @@
                                     </span>
                                 </div>
                                 <div>
-                                    <h3 class="mb-0 text-right text-uppercase">Renee Mckelvey</h3>
-                                    <p class="p-0 m-0 font-weight-light float-right">Account Settings</p>
+                                    <p class="mb-0 text-right text-uppercase p21">Renee Mckelvey</p>
+                                    <p class="p-0 m-0 font-weight-light float-right opacity-80">Account Settings</p>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -230,11 +232,12 @@
                             <div class="container py-0">
                                 <div class="row h-100">
                                     <div class="col-9 my-auto">
-                                        <h3 class="mb-0  text-uppercase">Unique Visitors</h3>
-                                        <p class="p-0 m-0 font-weight-light">Visitors in the current month</p>
+                                        <p class="mb-0  text-uppercase p21">Unique Visitors</p>
+                                        <p class="p-0 m-0 font-weight-light opacity-80">Visitors in the current month
+                                        </p>
                                     </div>
                                     <div class="col-3  my-auto text-right">
-                                        <h2 class="text-secondary">1 340</h2>
+                                        <p class="text-secondary p26">1 340</p>
                                     </div>
                                 </div>
                             </div>
@@ -243,11 +246,11 @@
                             <div class="container">
                                 <div class="row h-100">
                                     <div class="col-9 my-auto">
-                                        <h3 class="mb-0  text-uppercase">Load Time</h3>
-                                        <p class="p-0 m-0 font-weight-light">Average page load time</p>
+                                        <p class="mb-0  text-uppercase p21">Load Time</p>
+                                        <p class="p-0 m-0 font-weight-light opacity-80">Average page load time</p>
                                     </div>
                                     <div class="col-3  my-auto text-right ">
-                                        <h2 class="mb-0 text-secondary">1.2</h2>
+                                        <p class="mb-0 text-secondary p26">1.2</p>
                                         <p class="p-0 m-0 font-weight-light">sec</p>
                                     </div>
                                 </div>
@@ -257,11 +260,11 @@
                             <div class="container ">
                                 <div class="row h-100">
                                     <div class="col-9 my-auto">
-                                        <h3 class="mb-0  text-uppercase">New Issues</h3>
-                                        <p class="p-0 m-0 font-weight-light">System incidents and alerts</p>
+                                        <p class="mb-0  text-uppercase p21">New Issues</p>
+                                        <p class="p-0 m-0 font-weight-light opacity-80">System incidents and alerts</p>
                                     </div>
                                     <div class="col-3  my-auto text-right">
-                                        <h2 class="text-secondary">1 340</h2>
+                                        <p class="text-secondary p26">1 340</p>
                                     </div>
                                 </div>
                             </div>
@@ -271,23 +274,23 @@
                         <div class="container ">
                             <div class="row pt-5 pb-5 ">
                                 <div class="col-8 my-auto p-0">
-                                    <h3 class="mb-0 text-uppercase">Weekly Visitors</h3>
+                                    <p class="mb-0 text-uppercase p21 pl-1">Weekly Visitors</p>
                                 </div>
                             </div>
                             <div class="row h-75">
                                 <img src="images/image4.png" class="w-100 " alt="Image">
                             </div>
-
                         </div>
                     </div>
                 </div>
                 <div class="row mt-lg-5 border-top border-left border-right pt-1 mr-2 ml-2 mt-2">
-                    <div class="col-auto mr-auto ">
-                        <h3 class="pt-3 text-uppercase">Inbound / Outbound Bandwith</h3>
+                    <div class="col-auto pr-0">
+                        <p class="pt-3 text-uppercase text-truncate p21">Inbound / Outbound Bandwith</p>
                     </div>
-                    <div class="col-auto">
-                        <div class="bg-light float-right p-2">
-                            <button class="btn bg-light text-secondary"><i class="fas fa-cog fa-2x"></i></button>
+                    <div class="col-auto ml-auto">
+                        <div class=" float-right p-2">
+                            <button class="btn  text-secondary" id="settingsButton"><i
+                                    class="fas fa-cog fa-1x"></i></button>
                         </div>
                     </div>
                 </div>
@@ -300,25 +303,50 @@
                 <div class="row mt-lg-5 mt-2 mb-lg-5 mb-2 mr-2 ml-2">
                     <div class="col-12 col-lg-6 pr-lg-4 p-0 d-flex flex-column mt-2">
                         <div>
-                            <h3 class="text-uppercase">System Log</h3>
+                            <p class="text-uppercase p21">System Log</p>
                         </div>
                         <div class=" flex-grow-1 border">
-
-                            <ul class="pt-3">
-                                <li class="p-3">New Support Ticket Opened <span class="float-right pr-4">today</span>
+                            <ul class="events m-3 p-0 opacity-80">
+                                <li>
+                                    <circle></circle>
+                                    <span>New Support Ticket Opened</span>
+                                    <p class="ml-auto" id="p16">today</p>
                                 </li>
-                                <li class="p-3">System Reset<span class="float-right pr-4">14 min</span></li>
-                                <li class="p-3">Production Server Down<span class="float-right pr-4">2 hours</span></li>
-                                <li class="p-3">System Shutdown<span class="float-right pr-4">1 day</span></li>
-                                <li class="p-3">DB Overloaded 80%<span class="float-right pr-4">1 day</span></li>
-                                <li class="p-3">13 New Alerts<span class="float-right pr-4">2 day</span></li>
-                                <li class="p-3">view all</li>
+                                <li class="d-flex">
+                                    <circle></circle>
+                                    <span>System Reset</span>
+                                    <p class="ml-auto" id="p16">14 min</p>
+                                </li>
+                                <li class="d-flex">
+                                    <circle></circle>
+                                    <span>Production Server Down</span>
+                                    <p class="ml-auto" id="p16">2 hours</p>
+                                </li>
+                                <li class="d-flex">
+                                    <circle></circle>
+                                    <span>System Shutdown</span>
+                                    <p class="ml-auto" id="p16">1 day</p>
+                                </li>
+                                <li class="d-flex">
+                                    <circle></circle>
+                                    <span>DB Overloaded 80%</span>
+                                    <p class="ml-auto" id="p16">1 day</p>
+                                </li>
+                                <li class="d-flex">
+                                    <circle></circle>
+                                    <span>13 New Alerts</span>
+                                    <p class="ml-auto" id="p16">2 day</p>
+                                </li>
+                                <li class="d-flex">
+                                    <circle id="viewAll"></circle>
+                                    <span>view all</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6 pl-lg-4 p-0 d-flex flex-column mt-2">
+                    <div class="col-12 col-lg-6 pl-lg-4 p-0 d-flex flex-column mt-2 ">
                         <div>
-                            <h3 class="text-uppercase">New Tickets</h3>
+                            <p class="text-uppercase p21">New Tickets</p>
                         </div>
                         <div class="border  flex-grow-1">
                             <div class="flex-column d-flex h-100 ">
@@ -328,17 +356,17 @@
                                             <div class="col-auto  my-auto text-right ">
                                                 <span class="glyphicon glyphicon-envelope">
                                                     <i
-                                                        class="fas fa-user fa-2x text-secondary border p-3 rounded-circle"></i>
+                                                        class="fas fa-user fa-1x text-secondary border border-secondary p-3 rounded-circle"></i>
                                                 </span>
                                             </div>
-                                            <div class="col-auto pl-0">
-                                                <p class="mb-0 text-left  text-uppercase ">Christian Bilney</p>
+                                            <div class="col-auto pl-0 my-auto">
+                                                <p class="mb-0 text-left text-uppercase ">Christian Bilney</p>
                                                 <p class="p-0 m-0 font-weight-light text-left" id="p16">2 years ago</p>
                                             </div>
                                         </div>
-                                        <div class="row">
+                                        <div class="row pt-2">
                                             <div class="col-12">
-                                                <p class="m-0" id="p16">
+                                                <p class="m-0 opacity-80" id="p16">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                                     eiusmod tempor
                                                     incididunt ut labore et...
@@ -353,17 +381,17 @@
                                             <div class="col-auto  my-auto text-right ">
                                                 <span class="glyphicon glyphicon-envelope">
                                                     <i
-                                                        class="fas fa-user fa-2x text-secondary border p-3 rounded-circle"></i>
+                                                        class="fas fa-user fa-1x text-secondary border border-secondary p-3 rounded-circle"></i>
                                                 </span>
                                             </div>
-                                            <div class="col-auto pl-0">
+                                            <div class="col-auto pl-0 my-auto">
                                                 <p class="mb-0 text-left  text-uppercase">Hedy Vanetti</p>
                                                 <p class="p-0 m-0 font-weight-light text-left" id="p16">2 years ago</p>
                                             </div>
                                         </div>
-                                        <div class="row">
+                                        <div class="row pt-2">
                                             <div class="col-12">
-                                                <p class="m-0" id="p16">
+                                                <p class="m-0 opacity-80" id="p16">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                                     eiusmod tempor
                                                     incididunt ut labore et...
@@ -378,17 +406,18 @@
                                             <div class="col-auto  my-auto text-right ">
                                                 <span class="glyphicon glyphicon-envelope">
                                                     <i
-                                                        class="fas fa-user fa-2x text-secondary border p-3 rounded-circle"></i>
+                                                        class="fas fa-user fa-1x text-secondary border border-secondary p-3 rounded-circle"></i>
                                                 </span>
                                             </div>
-                                            <div class="col-auto pl-0">
-                                                <p class="mb-0 text-left  text-uppercase">Francisca Tireman</p>
+                                            <div class="col-auto pl-0 my-auto">
+                                                <p class="mb-0 text-left  text-uppercase opacity-0">Francisca Tireman
+                                                </p>
                                                 <p class="p-0 m-0 font-weight-light text-left" id="p16">2 years ago</p>
                                             </div>
                                         </div>
-                                        <div class="row vertical-center-row">
+                                        <div class="row vertical-center-row pt-2">
                                             <div class="col-md-12">
-                                                <p class="m-0" id="p16">
+                                                <p class="m-0 opacity-80" id="p16">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                                     eiusmod tempor
                                                     incididunt ut labore et...
@@ -419,7 +448,6 @@
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
