@@ -1,2 +1,2 @@
 # bootstrap
-URL: "https://bootstrapmaja.netlify.app/"
+URL: "https://bootstrap01.netlify.app/"
